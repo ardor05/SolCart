@@ -4,6 +4,12 @@ Sol Cart is a revolutionary technology that propose to combine mobile dApp, auto
 This tech solve the bad shoppers' experience in conventional shopping that used tradiotional shopping cart and counter payment method. Even when tech is rising up so quickly, the existing retails services for shoppers are lagging behind.
 
 
+
+
+
+
+
+
 DEMO:
 
 We foresee the Solana Saga Phone as a key enabler to a seamless shopping experience using our app through Solana-enabled payments. We incentivise shopping by airdropping vouchers in the form of NFTs and loyalty points in the form of tokens to reward loyal and frequent shoppers. 
