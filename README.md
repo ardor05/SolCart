@@ -2,6 +2,7 @@
 Sol Cart is a revolutionary technology that combined mobile dApp and autonomous robotic shopping cart
 
 DEMO:
+
 We foresee the Solana Saga Phone as a key enabler to a seamless shopping experience using our app through Solana-enabled payments. We incentivise shopping by airdropping vouchers in the form of NFTs and loyalty points in the form of tokens to reward loyal and frequent shoppers. 
 
 Our App links with the robot cart. Simply scan the barcode on the cart to log in to your profile which keeps track of all your shopping lists and transactions. Our app also allows you to check if the product is ethically sourced through supply chain tracking.
