@@ -1,0 +1,68 @@
+Copy the scuttle driver program from the google drive (robofun-1.0.zip) and put in ~/workspace . This file contains every necessary components that needed to run the
+scuttle robot.
+$ cd ~/workspace
+$ unzip robofun-1.0.zip
+
+Go to the
+robofun 1.0 directory:
+$ cd ~/workspace/robofun-1.0/
+
+Install dependency:
+$ chmod 777 install_dependencies.sh
+$ sudo ./install_dependencies.sh
+
+Reboot the system to update the registry
+$ sudo reboot
+
+Open your terminal again and go to .../platform/scuttle directory and check the list if it
+contained the hardware preq.sh file:
+$ cd ~/workspace/robofun-1.0/platform/scuttle/
+$ ls
+
+Run the command inside:
+$ sudo ./hardware preq.sh
+
+Check the driver directory if it contains flash file:
+$ cd ~/workspace/robofun-1.0/platform/scuttle/driver/
+$ ls
+
+Check the i2c bus:
+$ dmesg | grep i2c
+
+Run sudo chmod 777 /dev/i2c-<i2c_bus_id>
+$ sudo chmod 777 /dev/i2c 12
+
+Go to standalone directory and set the docker compose.yml
+$ cd ~/workspace/robofun-1.0/platform/scuttle/standalone
+
+Open the docker compose.yml
+$ gedit docker compose.yml
+
+Set the docker compose.yml
+- ROBOT_BASE="scuttle"
+- ROBOT_BASE_TYPE="devkit“
+- ROBOT_DOMAIN_ID=<017>
+- ROBOT_NAMESPACE=<i017>
+
+Everyone will have a different robot
+namespace based on their robot’s tag.
+
+Run the command to build docker compose.yml package:
+$ docker compose -f docker compose.yml build
+
+Start the package:
+$ docker compose -f docker compose.yml up
+
+The i2c LED will blink (showing it is functional). The robot can move if you try it using a controller. Make sure your connection is correct and the controller is turned on.
+To stop the package:
+$ docker compose -f docker compose.yml down
+
+In the new terminal, enter the amr.platform.scuttle docker.
+$ env | grep ROS
+
+Run:
+$ source install/setup.bash
+$ source /opt/ros/setup.bash
+
+Make sure all the needed topic is available:
+$ ros2 topic list
