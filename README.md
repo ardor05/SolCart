@@ -1,13 +1,10 @@
-# Sol Cart
-Sol Cart is a revolutionary technology that propose to combine mobile dApp, autonomous robotic shopping cart and Solana Saga smartphone to create the triangle of an intelligent and Solana-powered retail ecosystem.
+# Robot Cart 
+This cart utilize Autonomous Mobile Robot kit from Scuttle which include Intel-Axiomtek CAPA55R as its Singe Board Computer core, Intel RealSense camera, YD-Lidar and all robotics accessories.
 
-This tech solve the bad shoppers' experience in conventional shopping that used tradiotional shopping cart and counter payment method. Even when tech is rising up so quickly, the existing retails services for shoppers are lagging behind.
+For person-following and barcode scanning, its utilize the capabilities from Intel RealSense with complementary capability from Artificial Intelligence which are YOLO-v8 and Pyzbar.
 
+For autonomous guidance, its utilize YD-Lidar to localize its position and navigate its surroundings with object avoidance algorithm.
 
-
-
-
-
-
+All other accessories like motor, I2C driver and motor driver used to make it move smoothly to ensure seamless experience.
 
 
